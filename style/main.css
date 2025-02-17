@@ -681,3 +681,43 @@ section .row span {
     transform: none;
   }
 }/*# sourceMappingURL=main.css.map */
+
+/*!!!!!!!!!!!!!!!!!!!!yacine!!!!!!!!!!!!!!!!!!!!*/
+
+
+/* Default styles for <ul> inside .project-wrapper__text */
+#projects .project-wrapper__text .project-skills-list {
+  font-size: 1rem; /* Same size as the <p> tags */
+  line-height: 1.6; /* Adjust line height for readability */
+  padding-left: 20px; /* Default padding for list items */
+  margin-bottom: 1rem; /* Add space after the list for separation */
+}
+
+/* Default styles for <li> inside .project-skills-list */
+#projects .project-wrapper__text .project-skills-list li {
+  margin-bottom: 0.8rem; /* Add spacing between list items */
+}
+
+/* Adjust styles for screens smaller than 75em (1200px) */
+@media (max-width: 75em) {
+  #projects .project-wrapper__text .project-skills-list {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    padding-left: 15px; /* Reduce padding for smaller screens */
+  }
+
+  #projects .project-wrapper__text .project-skills-list li {
+    margin-bottom: 0.7rem; /* Reduce spacing between list items */
+  }
+}
+
+/* Adjust styles for screens smaller than 37.5em (600px) */
+@media (max-width: 37.5em) {
+  #projects .project-wrapper__text .project-skills-list {
+    font-size: 0.85rem; /* Further decrease font size */
+    padding-left: 10px; /* Even smaller padding */
+  }
+
+  #projects .project-wrapper__text .project-skills-list li {
+    margin-bottom: 0.6rem; /* Even smaller spacing between list items */
+  }
+}
