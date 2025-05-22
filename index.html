@@ -3,11 +3,10 @@
   <head>
     <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
       (function(w,d,s,l,i){
         w[l]=w[l]||[];
-        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'? '&l='+l : '';
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
         j.async=true;
         j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
         f.parentNode.insertBefore(j,f);
@@ -24,7 +23,7 @@
     <link rel="icon" type="image/png" href="./assets/devfolio-logo.png">
     <meta name="theme-color" content="#36d1dc">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fw37-maker.github.io/Portfolio_YS.github.io/">
     <meta property="og:title" content="Yacine Said | Portfolio">
@@ -38,9 +37,12 @@
     <meta property="twitter:description" content="Apprentice System & Network Engineer specialized in IT security seeking internship abroad.">
     <meta property="twitter:image" content="./assets/devfolio-logo.png">
 
-    <link rel="preload" as="style" href="./css/main.css">
+    <!-- Styles and Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Scripts -->
     <script defer src="./javascript/scrollreveal.min.js"></script>
     <script defer src="./javascript/scrollreveal.js"></script>
   </head>
@@ -54,10 +56,7 @@
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Yacine Said</span><br>
-          Apprentice System & Network Engineer specialized in IT security.
-        </h1>
+        <h1 class="hero-title">Hi, my name is <span class="text-color-main name">Yacine Said</span><br>Apprentice System & Network Engineer specialized in IT security.</h1>
         <p class="hero-cta"><a class="cta-btn cta-btn--hero" href="#about">Learn More</a></p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down"><div class="scroll-down"></div></a>
@@ -68,9 +67,7 @@
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img class="img-fluid" src="./assets/yacine.png" alt="Yacine Said">
-          </div>
+          <div class="about-wrapper__image"><img class="img-fluid" src="./assets/yacine.png" alt="Yacine Said"></div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">I am currently in my 4th year of an Engineering Degree Program at INSA CVL, specializing in IT security and technologies.</p>
             <p class="about-wrapper__info-text">I work as an Apprentice System and Network Engineer at Tours Metropole Val de Loire (September 2024 - August 2026) and previously interned as a System and Network Engineer at IT WORK (February - April 2024).</p>
@@ -81,34 +78,15 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <!-- Ajouter vos articles de projets ici -->
-      </div>
-    </section>
+    <section id="projects"><div class="container"><!-- Vos projets ici --></div></section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
-        </div>
-      </div>
-    </section>
+    <section id="contact"><div class="container"><h2 class="section-title">Contact</h2><div class="contact-wrapper"><p class="contact-wrapper__text">[Call to action]</p><a href="#" class="cta-btn cta-btn--resume">Contact Me</a></div></div></section>
 
     <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a>
-        <div class="social-links"><!-- vos icônes sociales --></div>
-        <hr>
-        <p class="footer__text">&copy; <span id="year"></span> - Template by <a href="https://github.com/AnilSeervi" target="_blank" rel="noopener noreferrer">Anil Seervi</a>.<br>Made with &hearts;</p>
-      </div>
-    </footer>
+    <footer class="footer"><div class="container"><a href="#hero" class="back-to-top" aria-label="top"><i class="fa fa-angle-up fa-2x"></i></a><div class="social-links"><!-- Social icons --></div><hr><p class="footer__text">&copy; <span id="year"></span> - Template by <a href="https://github.com/AnilSeervi" target="_blank">Anil Seervi</a>. Made with ♥</p></div></footer>
 
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script src="./javascript/valtilt.js"></script>
   </body>
